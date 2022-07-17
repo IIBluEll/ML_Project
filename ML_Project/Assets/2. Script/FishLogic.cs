@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FishLogic : MonoBehaviour
 {
-    public Area myArea;
+    public bool respawn;
+    public FishCollectorArea myArea;
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,15 @@ public class FishLogic : MonoBehaviour
 
    public void OnEaten()
     {
-        transform.localPosition = new Vector3(Random.Range(-myArea.range, myArea.range), 1f, Random.Range(-myArea.range, myArea.range)) + myArea.transform.localPosition;
+        if (respawn)
+        {
+            transform.position = new Vector3(Random.Range(-myArea.range, myArea.range),
+                1f,
+                Random.Range(-myArea.range, myArea.range)) + myArea.transform.position;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -1,0 +1,65 @@
+{
+    "Fish": {
+        "checkpoints": [
+            {
+                "steps": 499956,
+                "file_path": "results\\FishTest12\\Fish\\Fish-499956.onnx",
+                "reward": null,
+                "creation_time": 1658082801.090376,
+                "auxillary_file_paths": [
+                    "results\\FishTest12\\Fish\\Fish-499956.pt"
+                ]
+            },
+            {
+                "steps": 999929,
+                "file_path": "results\\FishTest12\\Fish\\Fish-999929.onnx",
+                "reward": null,
+                "creation_time": 1658083462.8201263,
+                "auxillary_file_paths": [
+                    "results\\FishTest12\\Fish\\Fish-999929.pt"
+                ]
+            },
+            {
+                "steps": 1499928,
+                "file_path": "results\\FishTest12\\Fish\\Fish-1499928.onnx",
+                "reward": 0.0,
+                "creation_time": 1658084131.0173173,
+                "auxillary_file_paths": [
+                    "results\\FishTest12\\Fish\\Fish-1499928.pt"
+                ]
+            },
+            {
+                "steps": 1999928,
+                "file_path": "results\\FishTest12\\Fish\\Fish-1999928.onnx",
+                "reward": 3.0,
+                "creation_time": 1658084814.083972,
+                "auxillary_file_paths": [
+                    "results\\FishTest12\\Fish\\Fish-1999928.pt"
+                ]
+            },
+            {
+                "steps": 2000628,
+                "file_path": "results\\FishTest12\\Fish\\Fish-2000628.onnx",
+                "reward": 3.0,
+                "creation_time": 1658084814.1543357,
+                "auxillary_file_paths": [
+                    "results\\FishTest12\\Fish\\Fish-2000628.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2000628,
+            "file_path": "results\\FishTest12\\Fish.onnx",
+            "reward": 3.0,
+            "creation_time": 1658084814.1543357,
+            "auxillary_file_paths": [
+                "results\\FishTest12\\Fish\\Fish-2000628.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0.dev0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
