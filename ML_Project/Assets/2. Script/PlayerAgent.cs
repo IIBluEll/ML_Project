@@ -48,7 +48,7 @@ public class PlayerAgent : Agent
             transform.rotation = Quaternion.Euler(new Vector3(0f, Random.Range(0, 360)));
             //this.transform.localPosition = new Vector3(0f, 1f, 0f);
         }
-
+        
         smallFish.GetComponent<FishLogic>().OnEaten();
         bigFish.GetComponent<FishLogic>().OnEaten();
     }
@@ -58,8 +58,9 @@ public class PlayerAgent : Agent
         var localVelocity = transform.InverseTransformDirection(rid.velocity);
         sensor.AddObservation(localVelocity.x);
         sensor.AddObservation(localVelocity.z);
-        //sensor.AddObservation(smallFish.transform.localPosition);
-        //sensor.AddObservation(this.transform.localPosition);
+        sensor.AddObservation(smallFish.transform.localPosition);
+        sensor.AddObservation(this.transform.localPosition);
+        sensor.AddObservation(Vector3.Distance(this.transform.position, smallFish.transform.position));
     }
 
     public void MoveAgent(ActionBuffers actionBuffers)
@@ -93,7 +94,7 @@ public class PlayerAgent : Agent
         if(transform.localPosition.y < 0)
         {
             EndEpisode();
-            SetReward(-0.1f);
+           // SetReward(-0.001f);
         }
     }
 
@@ -128,14 +129,14 @@ public class PlayerAgent : Agent
         if(collision.gameObject.CompareTag("SmallFish"))
         {
             isEaten = true;
-            AddReward(1f);
+            AddReward(10f);
             EndEpisode();
             //collision.gameObject.GetComponent<FishLogic>().OnEaten();
         }
         else if(collision.gameObject.CompareTag("BigFish"))
         {
             isEaten = true;
-            AddReward(-0.4f);
+            AddReward(-0.005f);
             EndEpisode();
             //collision.gameObject.GetComponent<FishLogic>().OnEaten();
         }

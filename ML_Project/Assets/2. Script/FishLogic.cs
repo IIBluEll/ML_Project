@@ -14,6 +14,6 @@ public class FishLogic : MonoBehaviour
 
    public void OnEaten()
     {
-        transform.position = new Vector3(Random.Range(-myArea.range, myArea.range), 1f, Random.Range(-myArea.range, myArea.range)) + myArea.transform.position;
+        transform.localPosition = new Vector3(Random.Range(-myArea.range, myArea.range), 1f, Random.Range(-myArea.range, myArea.range)) + myArea.transform.localPosition;
     }
 }

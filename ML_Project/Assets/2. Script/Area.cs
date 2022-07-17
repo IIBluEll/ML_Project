@@ -18,7 +18,7 @@ public class Area : MonoBehaviour
     {
         for (int i = 0; i < num; i++)
         {
-            GameObject f = Instantiate(type, new Vector3(Random.Range(-range, range), 1f, Random.Range(-range, range)) + transform.position, Quaternion.Euler(new Vector3(0f, Random.Range(0f, 360f), 90f)));
+            GameObject f = Instantiate(type, new Vector3(Random.Range(-range, range), 1f, Random.Range(-range, range)) + transform.localPosition, Quaternion.Euler(new Vector3(0f, Random.Range(0f, 360f), 90f)));
 
             f.GetComponent<FishLogic>().myArea = this;
         }
