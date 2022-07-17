@@ -9,12 +9,13 @@ using Unity.MLAgents.Actuators;
 public class PlayerAgent : Agent
 {
     Rigidbody rid;
-
     public Area myArea;
     public GameObject smallFish;
-    public float movespeed = 2;
-    public float turnSpeed = 300;
+    public GameObject bigFish;
+    public float movespeed = 1;
+    public float turnSpeed = 150;
     public bool isEaten = false;
+
     
 
     // Start is called before the first frame update
@@ -22,11 +23,9 @@ public class PlayerAgent : Agent
     {
         rid = GetComponent<Rigidbody>();
         smallFish = GameObject.FindGameObjectWithTag("SmallFish");
-    }
+        bigFish = GameObject.FindGameObjectWithTag("BigFish");
 
-    public override void Initialize()
-    {
-        
+       
     }
 
     public override void OnEpisodeBegin()
@@ -35,7 +34,7 @@ public class PlayerAgent : Agent
         {
             this.rid.angularVelocity = Vector3.zero;
             this.rid.velocity = Vector3.zero;
-            // this.transform.localPosition = new Vector3(0f, 1f, 0f);
+             //this.transform.localPosition = new Vector3(0f, 1f, 0f);
 
             transform.position = new Vector3(Random.Range(-myArea.range, myArea.range), 1f, Random.Range(-myArea.range, myArea.range)) + myArea.transform.position;
             transform.rotation = Quaternion.Euler(new Vector3(0f, Random.Range(0, 360)));
@@ -47,8 +46,11 @@ public class PlayerAgent : Agent
             this.rid.velocity = Vector3.zero;
             transform.position = new Vector3(Random.Range(-myArea.range, myArea.range), 1f, Random.Range(-myArea.range, myArea.range)) + myArea.transform.position;
             transform.rotation = Quaternion.Euler(new Vector3(0f, Random.Range(0, 360)));
+            //this.transform.localPosition = new Vector3(0f, 1f, 0f);
         }
-        
+
+        smallFish.GetComponent<FishLogic>().OnEaten();
+        bigFish.GetComponent<FishLogic>().OnEaten();
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -56,8 +58,8 @@ public class PlayerAgent : Agent
         var localVelocity = transform.InverseTransformDirection(rid.velocity);
         sensor.AddObservation(localVelocity.x);
         sensor.AddObservation(localVelocity.z);
-        sensor.AddObservation(smallFish.transform.localPosition);
-        sensor.AddObservation(this.transform.localPosition);
+        //sensor.AddObservation(smallFish.transform.localPosition);
+        //sensor.AddObservation(this.transform.localPosition);
     }
 
     public void MoveAgent(ActionBuffers actionBuffers)
@@ -78,7 +80,7 @@ public class PlayerAgent : Agent
         rid.AddForce(dirToGo * movespeed, ForceMode.VelocityChange);
         transform.Rotate(rotateDir, Time.fixedDeltaTime * turnSpeed);
 
-        if(rid.velocity.sqrMagnitude > 25f)
+        if(rid.velocity.sqrMagnitude > 15f)
         {
             rid.velocity *= 0.95f;
         }
@@ -87,6 +89,12 @@ public class PlayerAgent : Agent
     public override void OnActionReceived(ActionBuffers actions)
     {
         MoveAgent(actions);
+
+        if(transform.localPosition.y < 0)
+        {
+            EndEpisode();
+            SetReward(-0.1f);
+        }
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -108,6 +116,9 @@ public class PlayerAgent : Agent
         {
             continuousActionsOut[0] = -1;
         }
+
+
+
         var discreteActionsOut = actionsOut.DiscreteActions;
         discreteActionsOut[0] = Input.GetKey(KeyCode.Space) ? 1 : 0;
     }
@@ -117,14 +128,16 @@ public class PlayerAgent : Agent
         if(collision.gameObject.CompareTag("SmallFish"))
         {
             isEaten = true;
-            collision.gameObject.GetComponent<FishLogic>().OnEaten();
             AddReward(1f);
+            EndEpisode();
+            //collision.gameObject.GetComponent<FishLogic>().OnEaten();
         }
         else if(collision.gameObject.CompareTag("BigFish"))
         {
             isEaten = true;
-            collision.gameObject.GetComponent<FishLogic>().OnEaten();
-            AddReward(-1f);
+            AddReward(-0.4f);
+            EndEpisode();
+            //collision.gameObject.GetComponent<FishLogic>().OnEaten();
         }
     }
 }
