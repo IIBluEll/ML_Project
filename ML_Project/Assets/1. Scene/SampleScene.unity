@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.8077
+      value: -85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -333.6178
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -174,6 +174,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (20)
@@ -181,9 +185,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -201,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 114.69735
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -209,7 +221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -64.94266
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -239,6 +251,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (7)
@@ -246,9 +262,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -266,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.550198
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -274,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -66.95782
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -304,6 +328,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (5)
@@ -311,9 +339,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -331,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.1353607
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -339,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -267.80246
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -369,6 +405,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (17)
@@ -376,9 +416,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -396,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.304535
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -404,7 +452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -134.32587
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -434,6 +482,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (10)
@@ -441,9 +493,13 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
-      propertyPath: m_InferenceDevice
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -461,7 +517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -58.612305
+      value: -85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -469,7 +525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -135.76904
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -499,6 +555,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (8)
@@ -506,9 +566,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -666,7 +734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 118.669174
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -674,7 +742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.9036407
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -704,6 +772,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (6)
@@ -711,9 +783,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -815,7 +895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8953247
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -823,7 +903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -203.65858
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -853,16 +933,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691294, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: DecisionPeriod
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -880,7 +976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6818848
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -888,7 +984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -336.9448
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -918,6 +1014,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (21)
@@ -925,9 +1025,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -945,7 +1053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 118.12256
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -953,7 +1061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -198.86215
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -983,6 +1091,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (15)
@@ -990,9 +1102,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1010,7 +1130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -57.145523
+      value: -85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1018,7 +1138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -68.24817
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1048,9 +1168,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
@@ -1067,7 +1203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 64.5426
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1075,7 +1211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -268.92032
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1105,6 +1241,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (18)
@@ -1112,9 +1252,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1132,7 +1280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 117.28441
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1140,7 +1288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -133.12451
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1170,6 +1318,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (11)
@@ -1177,9 +1329,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1197,7 +1357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.025726
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1205,7 +1365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -202.09055
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1235,6 +1395,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (14)
@@ -1242,9 +1406,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1262,7 +1434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 120.3972
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1270,7 +1442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -334.59924
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1300,6 +1472,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (23)
@@ -1307,9 +1483,13 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
-      propertyPath: m_InferenceDevice
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1327,7 +1507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -60.044373
+      value: -85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1335,7 +1515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -203.14345
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1365,6 +1545,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (12)
@@ -1372,9 +1556,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1400,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1440,7 +1632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: turnSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
@@ -1449,7 +1641,7 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_BehaviorType
       value: 0
@@ -1461,6 +1653,10 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
@@ -1477,7 +1673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.053263307
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1485,7 +1681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -68.12564
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1515,6 +1711,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (4)
@@ -1522,7 +1722,7 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
       value: 1
@@ -1530,6 +1730,10 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
@@ -1546,7 +1750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.258854
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1554,7 +1758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.53733444
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1584,6 +1788,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (1)
@@ -1591,9 +1799,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1611,7 +1827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9683838
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1619,7 +1835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -136.87958
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1649,6 +1865,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (9)
@@ -1656,9 +1876,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1676,7 +1904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -59.224396
+      value: -85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1684,7 +1912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.31658173
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1714,6 +1942,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (2)
@@ -1721,9 +1953,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1741,7 +1981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 63.723495
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1749,7 +1989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -337.7815
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1779,9 +2019,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
@@ -1798,7 +2054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.354584
+      value: -85
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1806,7 +2062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -266.24857
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1836,6 +2092,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (16)
@@ -1843,9 +2103,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1863,7 +2131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 119.66849
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1871,7 +2139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -267.27112
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 99150273710611477, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1901,6 +2169,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310514158058680255, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: turnSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3204441714674584763, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Name
       value: FIshArea (19)
@@ -1908,9 +2180,17 @@ PrefabInstance:
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: b990426872fc2144f97bfcd446ef0312, type: 3}
     - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
       propertyPath: m_InferenceDevice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731848634166691296, guid: 598a0a4fa2d187245b754549991afb4f, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

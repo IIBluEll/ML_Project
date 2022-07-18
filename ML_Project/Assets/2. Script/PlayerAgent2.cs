@@ -5,9 +5,11 @@ using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 using Random = UnityEngine.Random;
+using System.Linq;
 
 public class PlayerAgent2 : Agent
 {
+    GameObject target;
     FishCollectorSettings m_FoodCollecterSettings;
     public GameObject area;
     FishCollectorArea m_MyArea;
@@ -19,9 +21,13 @@ public class PlayerAgent2 : Agent
 
     // Speed of agent movement.
     public float moveSpeed = 2;
+    public float eatBigger = 0.05f;
     public bool contribute;
     public bool useVectorObs;
     EnvironmentParameters m_ResetParams;
+
+    //
+    private float dist;
 
     public override void Initialize()
     {
@@ -29,7 +35,7 @@ public class PlayerAgent2 : Agent
         m_MyArea = area.GetComponent<FishCollectorArea>();
         m_FoodCollecterSettings = FindObjectOfType<FishCollectorSettings>();
         m_ResetParams = Academy.Instance.EnvironmentParameters;
-
+           
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -39,10 +45,23 @@ public class PlayerAgent2 : Agent
             var localVelocity = transform.InverseTransformDirection(m_AgentRb.velocity);
             sensor.AddObservation(localVelocity.x);
             sensor.AddObservation(localVelocity.z);
-
+            sensor.AddObservation(GetClosetSmallFish().transform.position.x);
+            sensor.AddObservation(GetClosetSmallFish().transform.position.z);
         }
 
     }
+
+    GameObject GetClosetSmallFish()
+    {
+        var list = GameObject.FindGameObjectsWithTag("SmallFish").OrderBy(x => Vector2.Distance(transform.position, x.transform.position)).ToList();
+
+        target = list[0];
+
+        dist = Vector3.Distance(this.transform.position, target.transform.position);
+
+        return list[0].gameObject;
+    }
+
     public void MoveAgent(ActionBuffers actionBuffers)
     {
 
@@ -54,13 +73,13 @@ public class PlayerAgent2 : Agent
         var discreteActions = actionBuffers.DiscreteActions;
 
 
-        var forward = Mathf.Clamp(continuousActions[0], -1f, 1f);
+        var forward = Mathf.Clamp(continuousActions[0], 0f, 1f);
         var right = Mathf.Clamp(continuousActions[1], -1f, 1f);
         var rotate = Mathf.Clamp(continuousActions[2], -1f, 1f);
 
         dirToGo = transform.forward * forward;
         dirToGo += transform.right * right;
-        rotateDir = -transform.up * rotate;
+        rotateDir = -transform.up * -rotate;
 
 
         m_AgentRb.AddForce(dirToGo * moveSpeed, ForceMode.VelocityChange);
@@ -78,12 +97,20 @@ public class PlayerAgent2 : Agent
     public override void OnActionReceived(ActionBuffers actionBuffers)
 
     {
+        
         MoveAgent(actionBuffers);
 
         if(transform.localPosition.y < 0)
         {
             EndEpisode();
         }
+
+        if(dist < 2)
+        {
+            AddReward(0.1f);
+        }
+
+       
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -118,6 +145,8 @@ public class PlayerAgent2 : Agent
             2f, Random.Range(-m_MyArea.range, m_MyArea.range))
             + area.transform.position;
         transform.rotation = Quaternion.Euler(new Vector3(0f, Random.Range(0, 360)));
+
+        transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -125,15 +154,24 @@ public class PlayerAgent2 : Agent
         if (collision.gameObject.CompareTag("SmallFish"))
         {
             collision.gameObject.GetComponent<FishLogic>().OnEaten();
-            AddReward(10f);
+            this.transform.localScale += new Vector3(eatBigger, eatBigger, eatBigger);
+            AddReward(1f);
            
         }
         if (collision.gameObject.CompareTag("BigFish"))
         {
             collision.gameObject.GetComponent<FishLogic>().OnEaten();
 
-            AddReward(-0.1f);
+            AddReward(-1f);
+            EndEpisode();
             
+        }
+        if (collision.gameObject.name.Contains("Wall"))
+        {
+
+            AddReward(-0.05f);
+            EndEpisode();
+
         }
     }
 
