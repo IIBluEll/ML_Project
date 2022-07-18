@@ -49,7 +49,7 @@ public class FishLogic : MonoBehaviour
         if (this.CompareTag("BigFish") && dist<10)
         {
            // float t = Agent.gameObject.GetComponent<PlayerAgent2>().moveSpeed / 15;
-            this.gameObject.transform.position = Vector3.Lerp(this.gameObject.transform.position, Agent.position, 0.03f);
+            this.gameObject.transform.position = Vector3.Lerp(this.gameObject.transform.position, Agent.position, 0.005f);
         }
     }
 }

@@ -107,7 +107,7 @@ public class PlayerAgent2 : Agent
 
         if(dist < 2)
         {
-            AddReward(0.1f);
+            AddReward(0.3f);
         }
 
        
@@ -162,14 +162,14 @@ public class PlayerAgent2 : Agent
         {
             collision.gameObject.GetComponent<FishLogic>().OnEaten();
 
-            AddReward(-1f);
+            AddReward(-0.7f);
             EndEpisode();
             
         }
         if (collision.gameObject.name.Contains("Wall"))
         {
 
-            AddReward(-0.05f);
+            AddReward(-0.1f);
             EndEpisode();
 
         }
