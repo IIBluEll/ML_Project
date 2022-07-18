@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smallFish: {fileID: 4994708804103296314, guid: 6aef14017ee286448a6cad81a1c64f7f, type: 3}
   bigFish: {fileID: 829710335527406130, guid: 149406ce980ac08438348fae9b7379b5, type: 3}
-  numSmallFish: 5
+  numSmallFish: 7
   numBigFish: 3
   respawnFish: 1
   range: 20
@@ -552,9 +552,21 @@ PrefabInstance:
       propertyPath: area
       value: 
       objectReference: {fileID: 3204441714674584763}
+    - target: {fileID: 3379936369285712631, guid: 9d85192ddbc243c4e82162ccf1a226d9, type: 3}
+      propertyPath: turnSpeed
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 7035826844502040724, guid: 9d85192ddbc243c4e82162ccf1a226d9, type: 3}
       propertyPath: m_Name
       value: Agent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035826844502040744, guid: 9d85192ddbc243c4e82162ccf1a226d9, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 3f39539422ea79d439aa2826ed0dd878, type: 3}
+    - target: {fileID: 7035826844502040744, guid: 9d85192ddbc243c4e82162ccf1a226d9, type: 3}
+      propertyPath: m_InferenceDevice
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7035826844502040744, guid: 9d85192ddbc243c4e82162ccf1a226d9, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize

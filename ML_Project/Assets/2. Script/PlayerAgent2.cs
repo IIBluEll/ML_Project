@@ -125,14 +125,14 @@ public class PlayerAgent2 : Agent
         if (collision.gameObject.CompareTag("SmallFish"))
         {
             collision.gameObject.GetComponent<FishLogic>().OnEaten();
-            AddReward(1f);
+            AddReward(10f);
            
         }
         if (collision.gameObject.CompareTag("BigFish"))
         {
             collision.gameObject.GetComponent<FishLogic>().OnEaten();
 
-            AddReward(-1f);
+            AddReward(-0.1f);
             
         }
     }
